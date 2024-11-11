@@ -1,0 +1,648 @@
+:root {
+    --dark-color: #000000;
+    --light-color: #ffffff;
+    --green: #8BE78B;
+    --purple: #9E84E7;
+    --blue: #84D6E7;
+    --yellow: #ECD036; 
+    --red: #F77659;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    width: 100%;
+}
+
+/*  TEXT STYLING */
+
+h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h2 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.subtitle {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+}
+
+.subtitle-margin-top {
+    margin-top: 16px;
+}
+
+.paddingl {
+    padding-left: 24px;
+}
+
+.logo {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.link {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.menu {
+    font-family: Poppins;
+    font-size: 1.25rem;
+}
+
+.book-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+    font-weight: bold;
+    letter-spacing: 6%;
+    text-transform: uppercase;
+}
+
+.footer-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin: 24px auto;
+}
+
+span {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.text-center-align {
+    text-align: center;
+}
+
+.email-highlight {
+    background-color: var(--green);
+}
+
+.author-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+    color: var(--green);
+    padding-bottom: 8px;
+}
+
+.book-description {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+/* SHADOW AND STROKE STYLING */
+
+.the-shadow {
+    box-shadow:  4px 4px var(--dark-color);
+}
+
+.the-stroke {
+    border: 1px solid var(--dark-color);
+}
+
+/* BUTTON STYLING */
+
+.button {
+    width: 400px;
+    height: 55px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 300px;
+    }
+}
+
+.button:hover {
+    background-color: var(--green);
+    transform: scale(1.05);
+}
+
+/* NAVBAR STYLING */
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    background-color: var(--purple);
+    z-index: 998;
+}
+
+nav ul {
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 100px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 32px;
+    display: flex;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+nav a:hover {
+    background-color: var(--green);
+    border: 1px solid var(--dark-color);
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.color-nav {
+    background-color: var(--light-color) !important;
+}
+
+.sidebar {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--purple);
+    z-index: 999;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    .fa-xmark {
+        font-size: 18px;
+    } 
+    .fa-bars {
+        font-size: 18px;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+/* HERO STYLING */
+
+header {
+    padding-top: 114px;
+    width: 100%;
+    height: 581px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-container {
+    width: 100%;
+    background-color: #9E84E7;
+    display: flex;
+    align-items: center;
+    padding: 0px 80px 40px 80px;
+    padding-top: 154px !important;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 114px 40px 40px 40px;
+    }
+    .title-container {
+        padding: 0px 40px 40px 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* what i do section styling */
+
+.skills {
+    width: 100%;
+    padding: 80px;
+}
+
+.skills-container {
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    gap: 48px;
+}
+
+.skill-card {
+    padding: 24px;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.skill-card span {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.skills-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .skills {padding: 40px}
+    .skill-card span {
+        gap: 8px;
+    }
+    .skill-card {
+        padding: 16px;
+    }
+    .skills-container {
+        gap: 16px;
+}
+}
+
+/* my learning journey section styling */
+
+.education {
+    width: 100%;
+    padding: 80px;
+    background-color: var(--light-color);
+}
+
+.accordion-button {
+    padding: 32px 24px;
+    margin-top: 24px;
+    max-width: 600px;
+    min-width: 250px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--green);
+}
+
+.edu-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    padding: 16px;
+    width: 250px;
+    background-color: var(--light-color);
+}
+
+.edu-card ul {
+    padding-left: 16px;
+    padding-top: 8px;
+}
+
+.edu-title {
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+.edu-list {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+
+.accordion-content1,
+.accordion-content2,
+.accordion-content3 {
+    background-color: var(--purple);
+    padding: 32px 32px;
+    max-width: 600px;
+    min-width: 250px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.accordion-content1 {
+    display: none;
+}
+
+.accordion-content2 {
+    display: none;
+}
+
+.accordion-content3 {
+    display: none;
+}
+
+.arrow-collapse1 {
+    display: none;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+.arrow-expand1 {
+    display: block;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+.arrow-collapse2 {
+    display: none;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+.arrow-expand2 {
+    display: block;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+.arrow-collapse3 {
+    display: none;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+.arrow-expand3  {
+    display: block;
+    padding: 16px;
+    color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    box-shadow:  -4px 4px var(--dark-color);
+    background-color: var(--purple);
+}
+
+@media (max-width: 768px) {
+    .education {
+        padding: 40px;
+    }
+    .edu-row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .accordion-content1,
+    .accordion-content2,
+    .accordion-content3 {
+        padding: 16px;
+    }
+}
+
+.fa-chevron-down:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+}
+
+.fa-chevron-up:hover {
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    cursor: pointer;
+}
+
+.paddingt {
+    padding-top: 48px;
+}
+
+/* experience section styling */
+
+.experience {
+    padding: 80px;
+}
+
+@media (max-width: 768px) {
+    .experience {padding: 40px;}
+}
+
+/* hobbies section design */
+
+.hobbies {
+    padding: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+@media (max-width: 768px) {
+    .hobbies {
+        padding: 40px;
+    }
+}
+
+/* let's chat section styling */
+
+.lets-chat {
+    display: flex;
+    padding: 80px;
+    gap: 10%;
+}
+
+@media (max-width: 768px) {
+    .lets-chat {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 40px;
+    }
+}
+
+.lc-container-1 {
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.lc-container-2 {
+    max-width: 500px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.lc-img-text {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/* bookshelf page styling */
+
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.book-card {
+    width: 400px;
+    height: 250px;
+    padding: 32px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-text {
+    max-width: 230px;
+}
+
+.book-align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .book-card {
+        padding: 16px;
+        height: 200px;
+        width: 325px;
+    }
+    .book-text {
+        width: 150px;
+    }
+}
+
+/* PROJECTS PAGE STYLING */
+
+.projects {
+    margin: 100px 80px;
+}
+
+.project-card {
+    width: 600px;
+    height: 400px;
+    padding: 32px;
+    background-color: var(--green);
+}
+
+.project-text {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        margin: 40px;
+    }
+    .project-card {
+        width: 300px;
+        height: 200px;
+        padding: 16px;
+    }
+}
+
+/* FOOTER STYLING */
+
+footer {
+    width: 100%;
+    height: 148px;
+    background-color: var(--blue);
+}
+
+.footer-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+hr {
+    border-color: var(--dark-color);
+}
+
+.fa-linkedin {
+    font-size: 40px;
+    color: var(--dark-color);
+}
+
+.fa-linkedin:hover {
+    color: #0A66C2;
+}

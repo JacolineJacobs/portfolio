@@ -736,10 +736,6 @@ hr {
         width: 100%;
         padding: 0;
     }
-    .resources {
-        width: 80%;
-        margin: 0;
-    }
 }
 
 
@@ -883,6 +879,7 @@ ul li {
     }
     .planning-wireframes {
         padding: 24px;
+        width: 100%;
     }
     .color-typo {
         padding: 24px;

@@ -787,21 +787,26 @@ hr {
 @media (max-width: 900px) {
     .design-process {
         padding: 24px;
+        width: 90%;
     }
     .research {
         padding: 24px;
+        width: 90%;
     }
     .planning-wireframes {
         padding: 24px;
     }
     .color-typo {
         padding: 24px;
+        width: 90%;
     }
     .coding-skills {
         padding: 24px;
+        width: 90%;
     }
     .conclusion {
         padding: 24px;
+        width: 90%;
     }
 }
 

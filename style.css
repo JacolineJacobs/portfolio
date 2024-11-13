@@ -679,26 +679,6 @@ hr {
     width: 48%;
 }
 
-@media (max-width: 900px) {
-    .project-overview {
-        flex-direction: column;
-        padding: 24px 0;
-        gap: 16px;
-        text-align: center;
-        width: 100%;
-    }
-    .project-overview-container-1 {
-        width: 100%;
-    }
-    .tt-row {
-        width: 100%;
-        padding: 0;
-    }
-    .resources {
-        width: 80%;
-        margin: 0;
-    }
-}
 
 .tt-row {
     display: flex;
@@ -736,11 +716,32 @@ hr {
     font-weight: 400;
 }
 
-
-
 .tt-padding-top {
     padding-top: 16px;
 }
+
+@media (max-width: 900px) {
+    .project-overview {
+        flex-direction: column;
+        padding: 24px 0;
+        gap: 16px;
+        text-align: center;
+        width: 100%;
+    }
+    .project-overview-container-1 {
+        width: 100%;
+        padding: 0 24px;
+    }
+    .tt-row {
+        width: 100%;
+        padding: 0;
+    }
+    .resources {
+        width: 80%;
+        margin: 0;
+    }
+}
+
 
 /* project goals section */
 .project-goals {
@@ -791,36 +792,6 @@ hr {
     display: flex;
 }
 
-@media (max-width: 900px) {
-    .design-process {
-        padding: 24px;
-        width: 100%;
-    }
-    .research {
-        padding: 24px;
-        width: 100%;
-    }
-    .research-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .planning-wireframes {
-        padding: 24px;
-    }
-    .color-typo {
-        padding: 24px;
-        width: 100%;
-    }
-    .coding-skills {
-        padding: 24px;
-        width: 100%;
-    }
-    .conclusion {
-        padding: 24px;
-        width: 100%;
-    }
-}
 
 .research {
     padding: 48px;
@@ -896,14 +867,33 @@ ul li {
     background-color: var(--light-color);
 }
 
-.color-highlight-green {
-    background-color: var(--green);
-}
-
-.color-highlight-blue {
-    background-color: var(--blue);
-}
-
-.color-highlight-purple {
-    background-color: var(--purple);
+@media (max-width: 900px) {
+    .design-process {
+        padding: 24px;
+        width: 100%;
+    }
+    .research {
+        padding: 24px;
+        width: 100%;
+    }
+    .research-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .planning-wireframes {
+        padding: 24px;
+    }
+    .color-typo {
+        padding: 24px;
+        width: 100%;
+    }
+    .coding-skills {
+        padding: 24px;
+        width: 100%;
+    }
+    .conclusion {
+        padding: 24px;
+        width: 100%;
+    }
 }

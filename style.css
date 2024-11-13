@@ -784,6 +784,10 @@ hr {
     background-color: var(--green);
 }
 
+.research-container {
+    width: 100%;
+}
+
 @media (max-width: 900px) {
     .design-process {
         padding: 24px;
@@ -791,22 +795,22 @@ hr {
     }
     .research {
         padding: 24px;
-        width: 90%;
+        width: 100%;
     }
     .planning-wireframes {
         padding: 24px;
     }
     .color-typo {
         padding: 24px;
-        width: 90%;
+        width: 100%;
     }
     .coding-skills {
         padding: 24px;
-        width: 90%;
+        width: 100%;
     }
     .conclusion {
         padding: 24px;
-        width: 90%;
+        width: 100%;
     }
 }
 

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacoline Jacobs Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+ <body>
+    <nav id="navbar" class="the-stroke the-shadow color-nav">
+        <ul class="sidebar">
+            <li  onclick=hideSideBar()><a><i class="link fa-solid fa-xmark"></i></a></li>
+            <li><a class="link menu" href="./about.html">About Me</a></li>
+            <li><a class="link menu" href="./projects.html">My Work</a></li> 
+            <li><a class="link menu" href="./contact.html">Contact Me</a></li>
+        </ul>
+        <ul class="nav-link">
+            <li><a class="link logo" href="./index.html">JACOLINE JACOBS</a></li>
+            <li><a class="link menu hide-on-mobile" href="./about.html">About Me</a></li>
+            <li><a class="link menu hide-on-mobile" href="./projects.html">My Work</a></li> 
+            <li><a class="link menu hide-on-mobile" href="./contact.html">Contact Me</a></li>
+            <li onclick=showSideBar() class="burger"><a><i class="link fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav> 
+
+    <div class="title-container the-stroke">
+        <h1>Second Chapter  |  </h1><p class="subtitle paddingl">A new chapter for pre-loved books</p>
+    </div>
+
+    <div class="project-overview the-stroke">
+        <div class="project-overview-container-1">
+            <h2>Project Overview</h2>
+            <p class="tt-padding-top">Second Chapter is a responsive web project created to breathe new life into secondhand books and provide a welcoming space for book lovers.</p>
+            <p>Focusing on two key pages—the dynamic homepage and the interactive cart page—this project allowed me to practice responsive design and JavaScript interactivity.</p>
+            <p>By blending thoughtful design choices with custom JavaScript, Second Chapter delivers a seamless user experience that’s both functional and visually inviting.</p>
+            <p class="tt-title tt-padding-top">My role:</p><p>Front-End Developer & UX/UI Designer</p>
+            <p class="tt-title tt-padding-top">Focus Areas:</p><p>Responsive Design & JavaScript Interactivity</p>
+            <a href="https://jacolinejacobs.github.io/second-chapter/" target="_blank"><button class="button the-shadow the-stroke sc-button">Visit website</button></a>
+        </div>
+        <div class="tt-row">
+            <div class="tt-card the-shadow the-stroke tools">
+                <p class="tt-title">Tools Used</p>
+                <p>VS Code</p>
+                <p>Figma</p>
+            </div>
+            <div class="tt-card the-shadow the-stroke technologies">
+                <p class="tt-title">Technologies</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+            </div>
+            <div class="tt-card the-shadow the-stroke resources">
+                <p class="tt-title">Resources</p>
+                <p>ChatGPT (for brainstorming and copywriting)</p>
+                <p>Pixabay (for free images)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-goals the-stroke">
+        <h2>Project Goals</h2>
+        <p class="tt-padding-top">The primary goal for Second Chapter was to strengthen my skills in responsive design while introducing JavaScript functionality to enhance user engagement. I set out to create:</p>
+        <ul>
+            <li><div class="project-goals-container the-shadow the-stroke"><p class="tt-title">A Mobile-First, Responsive Homepage: </p>Ensuring an inviting layout that adapts beautifully across all devices, making browsing easy for everyone.</div></li>
+            <li><div class="project-goals-container the-shadow the-stroke"><p class="tt-title">An Interactive Cart Page: </p>Developing JavaScript functionality to create an intuitive, smooth cart experience for users.</div></li>
+            <li><div class="project-goals-container the-shadow the-stroke"><p class="tt-title">Engaging Visuals and Easy Navigation: </p>A straightforward, user-centered layout supported by a warm color palette, accessible typography, and effective browsing.</div></li>
+        </ul>
+    </div>
+
+    <div class="design-process the-stroke">
+        <h2>Design Process</h2>
+        <div class="research the-shadow the-stroke">
+            <h3>Research</h3>
+            <p class="padding-top-large">For Second Chapter, I explored several secondhand book websites to identify common design issues and areas for improvement. While I didn’t conduct formal user research, I observed the following problems that influenced my design decisions:</p>
+            <ul>
+                <li class="padding-top-med"><p class="tt-title">Cluttered Product Sections: </p>Many websites were overloaded with text and information, making it hard for users to focus.</li>
+                <li class="padding-top-med"><p class="tt-title">Inconsistent Layouts: </p>Product cards and page elements varied greatly in size and style, causing confusion.</li>
+                <li class="padding-top-med"><p class="tt-title">Mobile Responsiveness: </p>Many sites had layouts that didn’t work well on mobile devices, making browsing difficult for users on the go.</li>
+            </ul>
+            <div class="padding-top-large research-container">
+                <img class="the-stroke the-shadow research-img" src="./images/sc-research-1.png" alt="">
+                <img class="the-stroke the-shadow research-img" src="./images/sc-research-2.png" alt="">
+            </div>
+            <p class="padding-top-large">By addressing these issues, I focused on creating a simpler, more intuitive browsing experience for Second Chapter, making it easier for users to navigate, find books, and engage with the platform.</p>
+        </div>
+        <div class="planning-wireframes the-shadow the-stroke">
+            <h3>Planning & Wireframes</h3>
+            <h5 class="padding-top-large">Planning</h5>
+            <p class="padding-top-med">Once I identified the key issues with existing secondhand book websites, I moved on to planning the layout and structure of Second Chapter. The goal was to create a clean, intuitive user experience that addressed these problems. I began by sketching out wireframes to establish the basic structure of the homepage, where key content would be prominently displayed. Key steps in the planning process:</p>
+            <ul>
+                <li class="padding-top-med"><p class="tt-title">Homepage Layout: </p>The homepage needed to be simple yet engaging, with clear access to book categories, featured books, and the cart. I focused on easy navigation with a visible search icon and clearly defined sections for product categories.</li>
+                <li class="padding-top-med"><p class="tt-title">Product Sections: </p>I designed sections on the homepage to display different book categories and highlight featured books. Each section includes clean, consistent product cards with images, titles, and prices for easy browsing.</li>
+                <li class="padding-top-med"><p class="tt-title">Mobile Layout: </p>As a mobile-first design, I made sure the wireframes were adaptable to different screen sizes, ensuring the homepage and product sections would work seamlessly on mobile devices.</li>
+            </ul>
+            <h5 class="padding-top-large">Wireframes</h5>
+            <p class="padding-top-med">During the wireframing phase, I used Figma to sketch the layout and structure of the homepage. The goal was to focus on functionality and user flow before moving on to detailed design. Key aspects of the wireframes included:</p>
+            <ul>
+                <li class="padding-top-med"><p class="tt-title">Basic Layout: </p>I mapped out the homepage with placeholders for the main product sections, search bar, and cart, ensuring easy navigation.</li>
+                <li class="padding-top-med"><p class="tt-title">Mobile Responsiveness: </p>The wireframes were designed with mobile users in mind, ensuring that the layout would adjust smoothly across different screen sizes.</li>
+                <li class="padding-top-med"><p class="tt-title">Simple User Flow: </p>I kept the flow intuitive, so users could easily browse product categories and quickly add books to their cart.</li>
+            </ul>
+            <img class="wireframes the-stroke the-shadow" src="./images/sc-wireframe.png" alt="wireframes">
+            <p class="padding-top-med">The wireframing stage allowed me to refine the layout and ensure a user-friendly structure before adding design details.</p>
+        </div>
+        <div class="color-typo the-shadow the-stroke">
+            <h3>Colors & Typography</h3>
+            <p class="padding-top-large">For Second Chapter, I carefully selected colors and fonts that would evoke a welcoming, modern feel while maintaining clarity and accessibility.</p>
+            <h5 class="padding-top-large">Colors: </h5>
+            <ul>
+                <li class="padding-top-med"><p class="tt-title">Primary Color: </p> A soft, earthy green (#7BAE7F) that gives a calm, vintage vibe—perfect for a secondhand book shop.</li>
+                <li class="padding-top-med"><p class="tt-title">Light Color: </p>A light, neutral tone (#ebeff0) to keep the background clean and easy on the eyes, offering good contrast with the primary and highlight colors.</li>
+                <li class="padding-top-med"><p class="tt-title">Dark Color: </p>A rich, deep charcoal (#01090a) for text and key elements, providing strong contrast and readability.</li>
+                <li class="padding-top-med"><p class="tt-title">Highlight Color: </p>A soft red (#FF6B6B) to draw attention to important buttons and calls to action, such as the "Add to Cart" button.</li>
+            </ul>
+            <p>I also tested these colors for accessibility to ensure they would be clear and readable for all users.</p>
+            <div  class="padding-top-large color-tests">
+                <img class="the-stroke" src="./images/sc-color-test-1.png" alt="">
+                <img class="the-stroke" src="./images/sc-color-test-2.png" alt="">
+            </div>
+            <h5 class="padding-top-large">Fonts: </h5>
+            <ul>
+                <li class="padding-top-med"><p class="tt-title">Bitter: </p>A serif font used for headings, providing a classic, literary feel that ties into the book theme.</li>
+                <li class="padding-top-med"><p class="tt-title">Montserrat: </p>A clean, modern sans-serif font used for body text, offering legibility and a contrast to the more decorative heading font.</li>
+            </ul>
+            <p>The combination of these colors and fonts helps create a user-friendly, aesthetically pleasing design while maintaining accessibility standards.</p>
+        </div>
+        <div class="coding-skills the-shadow the-stroke">
+            <h3>Coding Skills Gained</h3>
+            <p class="padding-top-large">In developing Second Chapter, I focused on building a solid foundation in both responsive design and JavaScript functionality to enhance the user experience. Here’s an overview of the key coding skills I applied and strengthened throughout the project:</p>
+            <ul class="padding-top-large"><h5>Responsive Design with HTML and CSS</h5>
+                <li><p class="tt-title padding-top-med">Flexbox & Grid: </p>Used to create a flexible layout that adjusts seamlessly across desktop and mobile views.</li>
+                <li><p class="tt-title padding-top-med">Media Queries: </p>Applied CSS media queries to ensure that elements like product sections and navigation adapt smoothly to various screen sizes, enhancing the mobile-first experience.</li>
+            </ul>
+            <ul class="padding-top-large"><h5>JavaScript Interactivity</h5>
+                <li><p class="tt-title padding-top-med">Dynamic Cart Interaction:</p>Implemented JavaScript to add and remove items in the cart, providing users with an interactive shopping experience</li>
+                <li><p class="tt-title padding-top-med">Responsive Navigation:</p>Created a responsive menu using JavaScript to simplify navigation on smaller screens.</li>
+            </ul>
+            <p>This project provided valuable hands-on experience with HTML, CSS, and JavaScript fundamentals, reinforcing my understanding of responsive web development and interactive features.</p>
+        </div>
+        <div class="conclusion the-shadow the-stroke">
+            <h3>Conclusion</h3>
+            <p class="padding-top-large">The Second Chapter project was an opportunity to apply my skills in responsive design and front-end development while focusing on creating an intuitive user experience for a secondhand book marketplace.</p>
+            <p>By addressing key usability issues—such as cluttered pages, inconsistent layouts, and lack of user feedback—I was able to create a more streamlined and engaging browsing experience.</p>
+            <p>The thoughtful use of color, typography, and mobile responsiveness ensured the site is both visually appealing and easy to navigate across all devices.</p>
+            <p>Overall, this project reinforced the importance of simplicity, accessibility, and user-centric design in building an effective online experience.</p>
+        </div>
+    </div>
+
+    <footer id="footer" class="the-stroke">
+        <div class="footer-contact">
+            <p>jacolinejacobs@outlook.com</p>
+            <a href="https://www.linkedin.com/in/jacoline-jacobs/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <p>+2766 142 0407</p>
+        </div>
+        
+        <hr>
+        <p class="footer-text">2024 Jacoline Jacobs   |   Web Developer</p>
+    </footer>
+        
+    <script src="./script.js"></script>
+ </body>
+
+ </html>

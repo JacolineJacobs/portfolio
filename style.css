@@ -42,9 +42,20 @@ h3 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+h5 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
 .subtitle {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.25rem;
+}
+
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem; 
 }
 
 .subtitle-margin-top {
@@ -53,6 +64,14 @@ h3 {
 
 .paddingl {
     padding-left: 24px;
+}
+
+.padding-top-large {
+    padding-top: 24px;
+}
+
+.padding-top-med {
+    padding-top: 12px;
 }
 
 .logo {
@@ -645,4 +664,195 @@ hr {
 
 .fa-linkedin:hover {
     color: #0A66C2;
+}
+
+/* second chapter project page styling */
+
+.project-overview {
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+@media (max-width: 900px) {
+    .project-overview {
+        flex-direction: column;
+        padding: 24px 0;
+        gap: 16px;
+        text-align: center;
+    }
+    .project-overview-container-1 {
+        width: 100%;
+    }
+    .tt-row {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.tt-row {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px 0;
+    width: 35%;
+}
+
+.tools {
+    background-color: var(--blue);
+}
+
+.technologies {
+    background-color: var(--green);
+}
+
+.resources {
+    background-color: var(--purple);
+}
+
+.sc-button {
+    background-color: #F77659;
+}
+
+.tt-card {
+    padding: 24px;
+}
+
+.tt-title {
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.project-overview-container-1 {
+    width: 48%;
+}
+
+.tt-padding-top {
+    padding-top: 16px;
+}
+
+/* project goals section */
+.project-goals {
+    padding: 80px 150px;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-goals ul {
+    list-style: none;
+    padding-top: 24px;
+    text-align: left;
+}
+
+.project-goals ul li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem;
+    padding-top: 16px; 
+}
+
+.project-goals-container {
+    background-color: var(--light-color);
+    padding: 24px;
+}
+
+/* design process section styling */
+
+.design-process {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--green);
+}
+
+.research {
+    padding: 48px;
+    margin-top: 36px;
+    width: 70%;
+    background-color: var(--light-color);
+}
+
+.research-img {
+    width: 100%;
+}
+
+.planning-wireframes {
+    padding: 48px;
+    margin-top: 36px;
+    width: 70%;
+    background-color: var(--light-color);
+}
+
+.wireframes {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.125rem; 
+}
+
+.color-typo {
+    padding: 48px;
+    margin-top: 36px;
+    width: 70%;
+    background-color: var(--light-color);
+}
+
+.color-tests {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.color-tests img {
+    width: 45%;
+}
+
+.research-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.research-container img {
+    width: 100%;
+}
+
+.coding-skills {
+    padding: 48px;
+    margin-top: 36px;
+    width: 70%;
+    background-color: var(--light-color);
+}
+
+.conclusion {
+    padding: 48px;
+    margin-top: 36px;
+    width: 70%;
+    background-color: var(--light-color);
+}
+
+.color-highlight-green {
+    background-color: var(--green);
+}
+
+.color-highlight-blue {
+    background-color: var(--blue);
+}
+
+.color-highlight-purple {
+    background-color: var(--purple);
 }

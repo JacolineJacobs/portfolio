@@ -692,6 +692,7 @@ hr {
     }
     .resources {
         width: 80%;
+        margin: 0;
     }
 }
 
@@ -700,7 +701,6 @@ hr {
     flex-direction: column;
     gap: 24px;
     padding: 40px 0;
-    width: 35%;
 }
 
 .tools {

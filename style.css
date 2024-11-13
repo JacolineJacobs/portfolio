@@ -681,6 +681,7 @@ hr {
         padding: 24px 0;
         gap: 16px;
         text-align: center;
+        width: 100%;
     }
     .project-overview-container-1 {
         width: 100%;

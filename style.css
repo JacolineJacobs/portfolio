@@ -675,6 +675,10 @@ hr {
     gap: 80px;
 }
 
+.project-overview-container-1 {
+    width: 48%;
+}
+
 @media (max-width: 900px) {
     .project-overview {
         flex-direction: column;
@@ -732,9 +736,7 @@ hr {
     font-weight: 400;
 }
 
-.project-overview-container-1 {
-    width: 48%;
-}
+
 
 .tt-padding-top {
     padding-top: 16px;

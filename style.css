@@ -651,7 +651,7 @@ header {
 
 @media (max-width: 768px) {
     .projects {
-        padding: 40px;
+        padding: 80px 24px;
     }
     .project-card {
         width: 300px;

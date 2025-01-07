@@ -612,11 +612,18 @@ header {
 /* PROJECTS PAGE STYLING */
 
 .projects {
-    padding: 100px 80px;
+    padding: 80px 80px;
     background-color: var(--green);
     display: flex;
+    gap: 48px;
     align-items: center;
     justify-content: center;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 10px;
 }
 
 .project-card {

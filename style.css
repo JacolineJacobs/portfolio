@@ -675,11 +675,15 @@ header {
         height: 200px;
     }
     .pc-icon-cont i {
-        font-size: 24px;
+        font-size: 18px;
         padding: 12px;
     }
     .project-text h2 {
         font-size: 36px;
+    }
+    .bold {
+        font-size: 18px;
+        padding-bottom: 6px;
     }
 }
 

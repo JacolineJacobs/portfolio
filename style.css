@@ -671,12 +671,13 @@ header {
 
 @media (max-width: 768px) {
     .project-card {
-        width: 300px;
-        height: 200px;
+        min-width: 300px;
+        min-height: 200px;
     }
     .pc-icon-cont i {
-        font-size: 18px;
-        padding: 12px;
+        font-size: 36px;
+        padding: 8px;
+        margin-top: 1.5rem;
     }
     .project-text h2 {
         font-size: 36px;
@@ -684,6 +685,10 @@ header {
     .bold {
         font-size: 18px;
         padding-bottom: 6px;
+    }
+    .projects {
+        padding: 24px 24px;
+        gap: 24px;
     }
 }
 
@@ -752,8 +757,13 @@ hr {
     min-width: 300px;
 }
 
+.plugins {
+    background-color: var(--red);
+    min-width: 300px;
+}
+
 .sc-button {
-    background-color: #F77659;
+    background-color: var(--yellow);
 }
 
 .tt-card {
@@ -943,4 +953,30 @@ ul li {
         padding: 24px;
         width: 100%;
     }
+}
+
+/* swapwisdom page styling */
+
+.sw-color-tests {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+}
+
+.sw-color-tests img {
+    width: 32%;
+}
+
+@media (max-width: 768px) {
+    
+    .sw-color-tests img {
+        min-width: 32%;
+    } 
+    .sw-color-tests {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+      
 }
